@@ -1,0 +1,475 @@
+ZADATAK:
+Napraviti kompletan, funkcionalan online meni za restoran koji se otvara:
+1. sa sajta restorana
+2. skeniranjem QR koda
+Meni mora biti STRIKTNO OPTIMIZOVAN SAMO ZA TELEFON.
+Desktop nije prioritet; ako postoji desktop prikaz, on može biti minimalan, ali glavni fokus je mobile-first.
+CILJ:
+Napraviti moderan, brz, pregledan i premium izgled online menija za restoran pored Mediterijana.
+Meni mora biti funkcionalan, jednostavan za održavanje, vizuelno jak i veoma lako čitljiv na telefonu.
+VAŽNO:
+• Ne izmišljaj finalne stavke menija ako nisu date.
+• Napravi kompletan sistem i strukturu, a na mestima gde nedostaju podaci ostavi jasne placeholders.
+• Piće i hrana već postoje; ostavi predviđena mesta da se kasnije ubace stvarni podaci.
+• Ako je potrebno, predloži najbolju strukturu i način organizacije sadržaja pre implementacije.
+• Sve mora biti spremno za upload na GitHub.
+• Posle izrade obavezno pripremi i jasna uputstva za deploy i push na GitHub.
+MOJ BROJ TEKSTOVA / PODATAKA:
+Ime restorana: Tuna Bay Grill
+
+Wine card: Pjenušci na čašu / sparkling wine by the glass :sacchetto presecco di conegliano - italy 0.10 ( 6.50€ ) 0.20 ( 11.50 € ) 0.75 ( 39.90 € ) 
+
+Bijela vina na čašu / white wine by the glass: malvazija kadum - istarsko vinogorje / istra wine region 0.10 6.50 € 0.20 12.80 € 0.75 37.00 €
+Malvazija radovan - istarsko vinogorje / istra wine region 0.10 6.50 eur 0.20 12.80 eur 0.75 37.00 eur
+Malvazija piquentum - istarsko vinogorje / istra wine region 0.10 8.00 eur 0.20 15.50 eur 0.75 58.00 eur
+
+Rose vina na čašu  / rose wine by the glass:
+Kadum rose  - istarsko vinogorje / istra wine region 0.10 6.50 eur 0.20 12.80 eur 0.75 39.00 eur
+
+Crvena vina na casu / red wine by the glass:
+Radovan cab. Sauvignon - istarsko vinogorje / istra wine region 0.10 8.50 eur 0.20 16.50 eur 0.75 67.00 eur
+Teran kadum - istarsko vinogorje/ istra wine region 0.10 8.50 eur 0.20 16.50 eur 0.75 62.00 eur
+
+Desetna vina na čašu / sweet wine by the glass: 
+Kadum muscat - istra wine region 0.10 5.50 eur 0.50 36.00 eur
+Cossetto muscat - istra wine region 0.10 5.50 eur 0.20 9.90 eur 0.75 36.00 eur
+
+Šampanjci na čašu / champagne by the glass:
+Louis barthelemy champagne amethyste brut - france 0.10 12.00 eur 0.75 98.00 eur
+
+Ovde staje lista vina koja idu na čašu, dalje su sve flaše:
+
+Šampanjci / champagne: moet & chandon - francuska / france champagne 0.75 155,00 eur
+
+Pjenušci / sekt:
+Pjenusac piquentum 0.75 80.00 eur
+
+Bijela vina / whitw wine:
+Malvazija kadum 0.75 37.00 eur
+Malvazija radovan 0.75 37.00 eur
+Malvazija kozlovic 0.75 44.00 eur
+Malvazija meneghetti 0.75 48.00 eur
+Radovan chardonay 0.75 48.00 eur
+Radovan sauvignon blanc 0.75 48.00 eur
+Korak sauvignon kamenice 0.75 78.00 eur
+Jerman vintage tunina 0.75 138.00 eur
+Drouhin laforet baurgogne chsrdonay 0.75 68.00 eur
+J.m. brocard chablis 0.75 69.00 eur
+Jerman pinot grigio 0.75 71.00 eur
+
+Crvena vina / red wine
+
+Radovan cab. Sauvignon 0.75 67.00 eur
+Kadum teran 0.75 62.00 eur
+Meneghetti merlot 0.75 57.00 eur
+Jerman red angel 0.75 105.00 eur
+Clai ottocento 0.75 85.00 eur
+
+Aperitivi / aperitifs & bitters:
+Campari & orange juice 0.13 5.80 eur
+Campari sofa 0.13 5.30 eur
+Pelinkovac 0.03 3.70 eur
+Amaro ramazzotti 0.03 5.40 eur
+Jagermaistwr 0.03 5.60 eur
+Martini bianco / rosso 0.10 7.00 eur
+
+Topli napitci:
+Espresso 2.50 eur
+Macchiato 2.40 eur
+Macchiati veliki / large 3.70 eur
+Cappucino 2.40 eur
+Cappucino veliki / large 3.70 eur
+Kava sa slagom 3.80 eur
+Latte macchiato 6.00 eur
+Kava bez kofeina 3.00 eur
+Espresso americano 2.50 eur
+
+Miješana pića / coolers & breezers:
+Apfelshorle 0.30 3.90 eur 0.50 5.50 eur
+Špeci / fanta & cola 0.30 4.00 eur 0.50 7.30 eur
+Radler sa spritom / beer & sprite 0.30 3.90 eur 0.50 5.50 eur
+Mis mas / fanta & red wine 0.30 7.30 eur 0.50 9.10 eur
+Bambus / red wine & cola 0.30 4.10 eur 0.50 7.30 
+Gemist / white wine & sparkling water 0.3p 3.40 eur 0.50 7.30 eur
+
+Bezalkoholna pića / soft drinks 
+Cola / fanta / sprite / cola zero 0.30 3.90 eur 0.50 5.50 eur
+Cola / fanta / sprite 0.33 5.00 eur
+Tonic water 0.25 4.30 eur
+Bitter lemon 0.25 4.30 eur
+Breskva ledeni caj / peach ice tea 0.33 4.30 eur 0.50 5.00 eur
+Vocni sokovi / fruit juices 0.30 4.00 eur 0.5 5.00 eur
+Red bull 0.25 6.50 eur
+
+Voda / water:
+San pelegrino - gazirana mineralna voda / sparkling mineral water 0.25 3.90 eur 0.75 7.10 eur
+Aqua panna - negazirana min voda / still min. water 0.25 3.90 eur 0.75 7.10 eur 
+
+Točeno pivo / draught beer: 
+Paulaner 5,0% 0.30 4.30 eur 0.50 6.50 eur
+
+Pivo u boci / bottled beer: 
+Heineken 5.0 % 0.33 5.50 eur
+Paulaner munchener hell 4.9% 0.33 6.00 eur
+Rebel černy tamno 4.7% 0.50 6.80 eur
+Paulaner psenicno pivo / wheat beer / weissbier 0.50 7.00 eur
+
+Lokal craft bottled beer:
+Bura brew optimist golding ale 5.4% 0.33 6.80 eur
+Bura brew tornado ipa-istrian pale ale 6.1% 0.33 7.80 eur
+Bura brew trippin' tripel 8.1% 0.33 9.80 eur
+
+Strana zestoka pica / international spirits :
+Vodka smirnoff 40% 0.03 5.00 eur
+Bombay saphire 47% 0.03 5.80 eur
+Bacardi rum white 40% 0.03 5.80 eur
+Rom zapaca 23 yo  40 % 0 03 10.00 eur
+Tequila cuervo silver 38% 0.03 5.00 eur
+
+Domaca zestoka pica / domestic spirits:
+Travarica / herbal brandy 40% 0.03 3.70 eur
+Lozovaca / hrape brandy 40% 0 03 3.70 eur
+Medica / honey brandy 40% 0.03 3.70 eur
+
+Domaci likeri / domestic liquers:
+Kruskovac 25% 0.03 3.70 eur
+
+Konjak brandy / cognac & brandy:
+Martell v.s. 40% 0.03 8.00 eur
+
+Viski / whisky:
+Ballantines 40% 0.03 5.00 eur
+Johnie walker red label 40% 0.03 5.80 eur
+Jack daniels 40% 0.03 7.50 eur
+
+Likeri / liqueurs:
+Malibu 21% 0.03 5.50 eur
+Baileys irish cream 17% 0.03 6.50 eur
+Amaretto di saronno 28% 0.03 6.00 eur
+Caintreau 40% 0.03 6.50 eur
+Sambuca 40% 0.03 6.00 eur
+
+Cocktails: 
+Mojito - havana fresh lime fresh mint sugar & min. Water 12.50 eur
+Negroni - gin campari martini rosso 12.50 eur
+Aperol spritz - aperol prosecco soda 8.50 eur
+Hugo - prosecco elderflower syrup sparkling minetar water mint 8.50 eur
+
+Non alcoholic cocktails/ bezalkoholni kokteli:
+Baby strawberry colada - strawberry syrup coco syrup pineapple juice lime juice 8.00 eur
+Fruity - strawberry syrup peach syrup orange & pineapple juice lime juice cream 8.00 eur
+Monkey bussiness- banana syrup pineaaple juice cream
+
+Food meni:
+
+Hladna predjela 
+
+Hladni riblji tanjur - selekcija hladnib ribljih predjela 19.10 eur
+Tuna tartar - krema mango avokado naranča wakame ikura 17.50 eur
+Istarski crostini - bread point sourdough focaccia ovcji sir s tartufima istarska kobasica divlja rukula 16.00 eur
+Bruschetta - rajčica korijander luk limeta maslinovo ulje 13.00 eur
+Istarski tanjur - domaci sourdough kruh prsut salama sir masline dzem smokve orasi 16.00 eur
+Ceviche - filet vijele ribe / tuna  de tigre huancaina krema avokado mango luk chilly wakame 19.00 eur
+
+Topla predjela:
+Spaghetti alla chittara sa dagnjama i bitargom - dagnje ćešnjak vino limun ulje od persuna butarga 18.50 eur
+Tagliolini sa kozicama - bisque limunksa trava kozice cider chimichurri 18.50 eur
+Tagliatelle sa jastogom - salsa od rajčice bisque od jastoga bodiljak 43.00 eur
+Tagliolini pomodoro badilico - umak od rajcice bosiljak 13.00 eur
+Istarski fuži - tuna / sabljarka inćuni šeri rajcica cesnjak perdun limunova korica 24.00 eur
+
+Glavna jela:
+Fish curry - bijela riba - dnevni ulov kokosovo kleko curry chilly udon noodles limeta 33.00 eur
+File brancina sa zara - bulgur blitva pinjoli persin rotkvica 29.00 eur
+Tuna steak - mrkva cous-cous crveni radic kapari sezam 32.00 eur
+Tuna poke bowl - sushi riẓ̌a mango avocado shitake eakame edamame sezam djumbir sriracha majoneza 28.00 eur
+Grilana hobotnica - krema od mrkve i anisa krema od koromaca blitva kokice kvinoje 34.00 eur
+Steak au poivre 250 gr - umak od zelenog papra domaci krupmirici 43.00 eur
+Premium burger 100% junetina - brie sir đem smokva panceta luk rukola tartufi majoneza batat bbq 24.00 eur
+Rebeye odrezak - marinada od soje i kruske sezamovo ulje mladi luk sezam pommes aligot 44.00 eur
+Iberico pork steak - krema od mrkve i zvjezdanog anisa femiglas umak ukiseljene tikvice 39.00 eur
+
+Tradicionalna glavna jela: 
+Škapmi žar 37.00 eur
+Skampi na buzaru - salsa rajcica bosiljak palenta 37.00 eur 
+Jadranska lignja grill 1kg 68.00 eur
+Dnevno svjeza riba grill ili al forno 1. Klasa 1kg 88.00 eur
+Dnevno svjeza riba grill ili al forno - ekstra klasa 1kg 116.00 eur
+
+- uz ova jela prilozi su blitva i krupmir, povrće sa žara
+
+Salate: 
+Caesar salata - krutoni parmezan chips od speka rajcica 13.00 eur
+* s pilecim prsima 16.50 eur
+* s confitiranom tunom 17.00 eur
+Sarena salara s trznice - domaci dresing 8.00 eur
+
+Djeciji menu:
+Tagliolini- rajcica bosiljak 9.00 eur
+Spaghetti bolognese - unak bolognese 10.00 eur
+Burger 80gr - przeni krumpirici kecap 12.00 eur
+Crunchy chicken stripes - przeni krumpirici kecap 11.00 eur
+
+Deserti:
+Baskijski cheseecake 9.00 eur
+Vocni tart 7.50 eur
+Kolac ljesnjak 11.00 eur
+Eclair cokolada 7.50 eur
+Limun tart 8.00 eur
+
+Prilozi: 
+Razni prilozi 6.00 eur
+Przeni krumpirici - kecap / majoneza 7.00 eur
+Przeni batat - bacon chips sriracha majo parmezan 9.80 eur
+Umaci kecap majoneza bbq sriracha majo sweet chilly 0.90 eur
+Blitva i krupmir 6.00 eur
+
+Kruh: 
+Domaci sorufough krub 2.90 eur
+
+Pizza menu: pizza napoletana
+Margerita - umak rajčica parmagiano reggiano mozzarella bosiljak 12.00€
+Istriana - krema od ovcjeg sira i tartufa fior di latte taggiasca masline kapari inćuni pikantna salama 16 50€
+Siciliana - san marzano rajčica fior di latte taggiasca masline kapari inćuni pikantna salama  16.00 €
+Mortadela - pistachio - mozzarella pesto pistacija mortadela bosiljak 16.00€
+Pizza capricciosa - san marzano rajcica fior di latte prosciutto cotto artičoke ukiseljeni šampinjoni taggiasca masline 14.90€
+TEHNIČKI ZADATAK:
+• napravi novi, production-ready mobile-first web app
+• koristi čist i moderan stack
+• preporuka: Next.js + React + TypeScript + Tailwind CSS
+• koristi komponentni pristup
+• koristi data-driven arhitekturu preko JSON/TS data fajlova
+OSNOVNA STRUKTURA MENIJA:
+Meni mora imati 3 glavne sekcije:
+1. Piće
+2. Hrana
+3. Pizze
+GLOBALNI UX / UI PRINCIPI:
+• Mobile-first layout
+• Veliki tap targeti
+• Jasna hijerarhija teksta
+• Jednostavna navigacija za jedan palac
+• Minimalan broj koraka do informacije
+• Brzo učitavanje slika
+• Optimizovane slike
+• Elegantna tipografija
+• Čiste kartice i accordion/dropdown interakcije
+• Bez PDF menija
+• Bez komplikovanih prelaza koji usporavaju telefon
+• Bez auto-play ponašanja gde korisnik može da se zbuni
+• Sve slike moraju biti optimizovane za web i mobile
+• Prati dobar balans između vizuelnog i brzine učitavanja
+NAVIGACIJA:
+Na vrhu ili pri dnu ekrana napravi jednostavan sticky switcher/tab bar sa 3 kategorije:
+• Piće
+• Hrana
+• Pizze
+Kada korisnik klikne na kategoriju, prikazuje se odgovarajući sadržaj bez nepotrebnog reload-a strane.
+SEKCIJA 1: PIĆE
+Svako piće mora imati:
+• naziv
+• kategoriju ako je potrebno
+• sastojke
+• količinu u ml
+• cenu
+• malu grafičku sliku kako izgleda kada se posluži
+• kratak opis
+• dodatni info koji se otvara kroz dropdown / accordion
+Dropdown / accordion logika:
+Kada korisnik klikne na piće, da se otvori kartica sa dodatnim informacijama:
+• detaljniji opis
+• priča o piću
+• poreklo / istorija ako je relevantno
+• preporuka uz šta najbolje ide
+• način serviranja
+• napomena o ukusu / jačini / karakteru
+Za koktele i mešana pića:
+• prikaži tačne mere sastojaka
+• formatiraj jasno, kao recepte
+• ako nema tačnih mera u datom sadržaju, ostavi placeholder polja za unos
+Vizuelno:
+• mala ilustracija ili grafički prikaz pića
+• elegantna kartica
+• jasno odvojena osnovna i proširena informacija
+SEKCIJA 2: HRANA
+Za hranu koristi isti logički sistem kao za piće, ali prilagođen jelima.
+Svako jelo mora imati:
+• naziv
+• sastojke
+• cenu
+• kratki opis
+• oznaku za najtraženija / MVP jela
+• pravu fotografiju jela kako je servirano
+• dodatni info kroz dropdown / accordion
+Na kartici hrane obavezno istaknuti:
+• MVP / signature jela
+• najporučivanija jela
+• jela koja izgledaju najatraktivnije na fotografiji
+Kako da se postavi logika:
+• MVP jela neka budu vizuelno istaknuta posebnom oznakom
+• po mogućnosti neka budu bliže vrhu liste
+• napravi osećaj premium menija, ali da ostane jednostavno i pregledno
+• koristi fotografije koje zauzimaju dovoljno prostora da jelo deluje privlačno
+Dropdown / accordion kod hrane treba da prikazuje:
+• detaljniji opis
+• sastav
+• veličinu porcije ako postoji
+• alergene / napomene ako postoje
+• preporuku uz piće ako ima smisla
+SEKCIJA 3: PIZZE
+Pizza sekcija mora imati poseban, jači vizuelni karakter.
+KONCEPT:
+• Glavna pizza sekcija treba da izgleda kao ad za svežu pizzu dana
+• Fokus na napolitanu kao main hero / main ad
+• Treba da postoji interaktivni slideshow / carousel
+• Slideshow mora da se menja prstom (swipe gesture)
+• Ne koristi auto-rotaciju
+• Korisnik mora sam da prevlači između pizza
+• Svaka pizza u carousel-u mora imati ispod:
+◦ naziv
+◦ kratak, dobar opis
+◦ osećaj / karakter pizze
+◦ sastojke po potrebi
+◦ cenu
+Kombinuj:
+• hero vizual za napolitanu
+• swipe carousel za ostale pizze
+• jasan opis ispod svake pizze
+• premium, “fresh daily” osećaj
+DODATNA LOGIKA ZA PIZZE:
+• pizza dana / sveža ponuda do 17:00h
+• nakon 17:00h prikaz može ostati isti, ali može imati drugačiji badge ili naglašavanje
+• koristi lokalnu vremensku logiku preko podešavanja restorana
+• vreme restorana treba biti podesivo kroz config
+VAŽNO ZA CAROUSEL:
+• Maksimalno 3–5 vidljivih ključnih pizza u jednoj rotaciji ako je moguće
+• Mora postojati jasan indikator pozicije (dots / progress / arrows)
+• Kontrole moraju biti vidljive
+• Swipe mora raditi glatko
+• Ne oslanjaj se samo na swipe; obavezno dodaj i vizuelne kontrole
+DIZAJN:
+• moderni restoran / mediteranski premium stil
+• čiste boje
+• dobra čitljivost
+• bez prenatrpanosti
+• fokus na hranu i fotografije
+• user experience mora delovati brzo i intuitivno
+PREPORUČENA ARHITEKTURA:
+1. Header sa nazivom restorana
+2. Kratak hero blok
+3. Sticky category tabs
+4. Sekcija pića
+5. Sekcija hrane
+6. Sekcija pizza
+7. Footer sa kontakt informacijama / radnim vremenom / QR info ako je potrebno
+FUNKCIONALNOST:
+• sve sekcije moraju biti responsivne
+• accordion mora raditi bez problema na telefonu
+• carousel za pizze mora podržavati swipe
+• slike moraju biti lazy-loaded gde je moguće
+• meni mora biti brz i stabilan
+• podaci treba da budu odvojeni od UI-a
+• omogući lako menjanje cena, opisa i fotografija
+• koristi komponente koje se lako održavaju
+DATA-DRIVEN:
+Napravi odvojene data fajlove ili JSON strukture za:
+• drinks
+• food
+• pizzas
+FORMAT PODATAKA:
+Za svaki item koristi objekat sa poljima koja omogućavaju lak unos podataka.
+Primer strukture koja treba da postoji:
+DRINKS DATA:
+• id
+• name
+• ingredients
+• ml
+• price
+• image
+• shortDescription
+• longDescription
+• originStory
+• servingSuggestion
+• bestWith
+• isSignature
+• category
+FOOD DATA:
+• id
+• name
+• ingredients
+• price
+• image
+• shortDescription
+• longDescription
+• servingStyle
+• allergens
+• isMvp
+• isSignature
+• category
+PIZZA DATA:
+• id
+• name
+• image
+• shortDescription
+• longDescription
+• ingredients
+• price
+• isPizzaOfTheDay
+• availableUntil
+• category
+OBAVEZNI PLACEHOLDERS:
+Pošto ja već imam piće i meni, ostavi jasna mesta gde ću kasnije ubaciti sadržaj.
+Zato napravi:
+• [DRINKS_JSON_PLACEHOLDER]
+• [FOOD_JSON_PLACEHOLDER]
+• [PIZZAS_JSON_PLACEHOLDER]
+• [RESTAURANT_BRAND_PLACEHOLDER]
+• [GITHUB_REPO_PLACEHOLDER]
+• [DEPLOY_PLACEHOLDER]
+• [IMAGES_PLACEHOLDER]
+IMPLEMENTACIJA:
+1. Prvo napravi plan strukture projekta
+2. Zatim napravi UI komponente
+3. Zatim poveži data source
+4. Zatim implementiraj accordion / dropdown
+5. Zatim implementiraj pizza carousel sa swipe podrškom
+6. Zatim optimizuj mobile UX
+7. Zatim testiraj sve interakcije
+8. Zatim pripremi GitHub push korake
+9. Na kraju pripremi kratko uputstvo za update menija u budućnosti
+KOMPONENTE KOJE SU POTREBNE:
+• MenuHeader
+• CategoryTabs
+• DrinkCard
+• DrinkAccordionContent
+• FoodCard
+• FoodAccordionContent
+• PizzaHero
+• PizzaCarousel
+• PizzaSlide
+• FooterInfo
+• DataLoader / MenuData layer
+KVALITET I TESTIRANJE:
+Obavezno proveri:
+• da li sve radi na telefonu
+• da li accordion otvara i zatvara sadržaj
+• da li swipe radi na carousel-u
+• da li su tap targeti dovoljno veliki
+• da li slike nisu preteške
+• da li je tekst čitljiv
+• da li je sve uklopljeno bez horizontalnog skrolovanja
+• da li je aplikacija spremna za realno korišćenje
+ZAVRŠNI OUTPUT KOJI ŽELIM OD TEBE:
+• kompletan kod menija
+• spremnu strukturu projekta
+• jasne instrukcije za ubacivanje mojih podataka
+• instrukcije za GitHub upload
+• ako treba, napiši i kratko šta treba da se unese u repo, env ili config
+• ne ostavljaj rupe u funkcionalnosti
+• sve mora biti praktično i spremno za deploy
+PRAVILO:
+Ne pravi generički projekat.
+Napravi premium, funkcionalan, mobile-first online meni za restoran sa QR pristupom, sa jasnim razdvajanjem pića, hrane i pizza, i sa kvalitetnim UX-om koji izgleda kao ozbiljno rešenje za restoran.
+
+Dodatne instrukcije: 
+Sve potrebne slike pronadji na internetu.

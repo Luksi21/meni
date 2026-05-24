@@ -1,0 +1,10 @@
+{
+  "name": "Tuna Bay Grill Menu",
+  "short_name": "Tuna Bay",
+  "description": "Mobile-first menu for Tuna Bay Grill",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b2a3a",
+  "theme_color": "#0b2a3a",
+  "icons": []
+}

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx next *)",
+      "Bash(git --version)",
+      "Bash(set NODE_ENV=production)",
+      "Bash(git branch *)",
+      "Bash(git -c user.email=ales.kaplar@serpent.si -c user.name=\"Luksi21\" commit -q -m \"Initial: Tuna Bay Grill mobile menu\")"
+    ]
+  }
+}
