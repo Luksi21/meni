@@ -36,7 +36,7 @@ export const food: Food[] = [
     category: "cold-starters",
     ingredients: "Krema mango, avokado, naranča, wakame, ikura",
     price: 17.5,
-    image: img("photo-1648565202321-c5f44f1cf64b"),
+    image: img("photo-1503764654157-72d979d9af2f"),
     shortDescription: "Svježa tuna, mango, avokado, ikura – signature predjelo Tuna Bay.",
     longDescription:
       "Naša najprepoznatljivija ploča – ručno sjeckana svježa tuna s tropskom kremom od manga, avokadom i naranom, finiširana wakame algama i ikura kavijarom.",
@@ -50,7 +50,7 @@ export const food: Food[] = [
     category: "cold-starters",
     ingredients: "Sourdough focaccia, ovčji sir s tartufima, istarska kobasica, divlja rukula",
     price: 16.0,
-    image: img("photo-1601001435957-74f0958a93c5"),
+    image: img("photo-1572441713132-c542fc4fe282"),
     shortDescription: "Domaća focaccia s ovčjim sirom, tartufima i istarskom kobasicom.",
     pairing: "Malvazija Kozlović, Teran Kadum"
   },
@@ -69,7 +69,7 @@ export const food: Food[] = [
     category: "cold-starters",
     ingredients: "Domaći sourdough, pršut, salama, sir, masline, džem od smokve, orasi",
     price: 16.0,
-    image: img("photo-1626200926749-cfb8a3d23a55"),
+    image: img("photo-1556909114-f6e7ad7d3136"),
     shortDescription: "Plate za podijeliti – sve okuse Istre na jednom tanjuru.",
     isMvp: true,
     pairing: "Teran Kadum"
@@ -80,7 +80,7 @@ export const food: Food[] = [
     category: "cold-starters",
     ingredients: "File bijele ribe / tuna, leche de tigre, huancaina krema, avokado, mango, luk, chilli, wakame",
     price: 19.0,
-    image: img("photo-1626200926749-cfb8a3d23a55"),
+    image: img("photo-1551782450-a2132b4ba21d"),
     shortDescription: "Peruanski ceviche s istarskim potpisom.",
     longDescription:
       "Svježi file dnevnog ulova (ili tune) marinirani u leche de tigre, posluženi s avokadom, mangom i huancaina kremom – odlična kombinacija svježine i blagog začina.",
@@ -160,7 +160,7 @@ export const food: Food[] = [
     category: "mains",
     ingredients: "Bulgur, blitva, pinjoli, peršin, rotkvica",
     price: 29.0,
-    image: img("photo-1535400255456-1d3e4dca96b5"),
+    image: img("photo-1590947132387-155cc02f3212"),
     shortDescription: "Klasik s roštilja – fino začinjen i lagan.",
     isMvp: true,
     pairing: "Korak Sauvignon"
@@ -266,7 +266,7 @@ export const food: Food[] = [
     category: "traditional-mains",
     unit: "/kg",
     price: 68.0,
-    image: img("photo-1559847844-d7fde1d83a17"),
+    image: img("photo-1571066811602-716837d681de"),
     shortDescription: "Sezonska jadranska lignja, savršeno pečena."
   },
   {
@@ -286,7 +286,7 @@ export const food: Food[] = [
     ingredients: "Grill ili al forno · uz prilog blitva i krumpir, povrće sa žara",
     unit: "/kg",
     price: 116.0,
-    image: img("photo-1535140728325-a4d3707eee94"),
+    image: img("photo-1559847844-5315695dadae"),
     shortDescription: "Premium ulov – samo najbolje s naših obala.",
     isSignature: true
   },
@@ -316,7 +316,7 @@ export const food: Food[] = [
     category: "salads",
     ingredients: "Krutoni, parmezan, chips od speka, rajčica, confit tuna",
     price: 17.0,
-    image: img("photo-1604908554049-b89dcb6c6018"),
+    image: img("photo-1513104890138-7c749659a591"),
     shortDescription: "Naša verzija – sa sporo kuhanom tunom u maslinovom ulju.",
     isSignature: true
   },
@@ -435,7 +435,7 @@ export const food: Food[] = [
     category: "sides",
     ingredients: "Bacon chips, sriracha majo, parmezan",
     price: 9.8,
-    image: img("photo-1604908554049-b89dcb6c6018"),
+    image: img("photo-1573080496219-bb080dd4f877"),
     shortDescription: "Premium batat sa speckom i parmezanom.",
     isSignature: true
   },

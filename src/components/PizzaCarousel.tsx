@@ -1,10 +1,10 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { pizzas } from "@/data/pizzas";
 import { restaurant } from "@/data/restaurant";
 import { formatEUR } from "@/lib/format";
+import DishImage from "./DishImage";
 
 export default function PizzaCarousel() {
   const trackRef = useRef<HTMLDivElement | null>(null);
@@ -71,13 +71,12 @@ export default function PizzaCarousel() {
                 aria-label={`${i + 1} of ${pizzas.length}: ${p.name}`}
               >
                 <div className="relative aspect-[4/5] w-full">
-                  <Image
+                  <DishImage
                     src={p.image}
                     alt={p.name}
-                    fill
-                    sizes="(max-width: 640px) 85vw, 420px"
-                    className="object-cover"
                     priority={i === 0}
+                    emoji="🍕"
+                    className="absolute inset-0 h-full w-full"
                   />
                   <div className="absolute inset-0 bg-hero-gradient" />
 

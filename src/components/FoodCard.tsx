@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import type { Food } from "@/types/menu";
 import { formatEUR } from "@/lib/format";
 import FoodAccordionContent from "./FoodAccordionContent";
+import DishImage from "./DishImage";
 
 export default function FoodCard({ food }: { food: Food }) {
   const [open, setOpen] = useState(false);
@@ -22,13 +22,10 @@ export default function FoodCard({ food }: { food: Food }) {
         className="block w-full text-left"
       >
         <div className="relative aspect-[16/10] w-full overflow-hidden bg-bay-shell">
-          <Image
+          <DishImage
             src={food.image}
             alt={food.name}
-            fill
-            sizes="(max-width: 640px) 100vw, 480px"
-            className="object-cover"
-            loading="lazy"
+            className="absolute inset-0 h-full w-full"
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bay-deep/55 via-transparent to-transparent" />
 
